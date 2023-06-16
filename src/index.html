@@ -48,7 +48,10 @@
             function login(){
                 try{
                     fetch("/.auth/login/aad").
-                    then( console.log("done"));
+                    then( console.log("done")).
+                    catch((e)=>{
+                        console.log(e);
+                    })
 
                 }catch(e){
                     console.log(e);
