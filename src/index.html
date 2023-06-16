@@ -45,7 +45,8 @@
 
             function profile(){
                 getUserInfo().then( (val)=>{
-                    document.getElementById("content").innerHTML = val.userDetails;   
+                                        
+                    document.getElementById("content").innerHTML =JSON.stringify(val);   
                 });                
                 
             }
