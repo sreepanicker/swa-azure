@@ -39,14 +39,13 @@
                 document.getElementById("content").innerHTML = "expense called";
             }
 
-         
+         // Adding Route to the Browser history
 
             const route = (event) =>{
                 event = event || window.event;
                 event.preventDefault();
                 const loc =  window.location.pathname; 
-                window.history.pushState({}, "", event.target.href);
-                //console.log(event.target.href);
+                window.history.pushState({}, "", event.target.href);              
                 locationHandler();
             };
 
@@ -58,7 +57,6 @@
                 return;
                 }
                 e.preventDefault();
-                console.log("Prevent the click");
                 route();
             });
 
