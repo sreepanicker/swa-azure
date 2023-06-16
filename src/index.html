@@ -46,8 +46,14 @@
             //Authentication - login 
 
             function login(){
-                fetch("/.auth/login/aad").
-                then( console.log("done"));
+                try{
+                    fetch("/.auth/login/aad").
+                    then( console.log("done"));
+
+                }catch(e){
+                    console.log(e);
+                }  
+                
             }
 
 
