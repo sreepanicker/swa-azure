@@ -8,14 +8,11 @@
     "navigationFallback": {
       "rewrite": "/index.html",     
     },
-
-   
-
     "auth": {
         "identityProviders": {
           "azureActiveDirectory": {
             "registration": {
-              "openIdIssuer": "AZURE_TENANT_ID",
+              "openIdIssuer": "https://login.microsoftonline.com/66957404-26d4-489b-9385-dde6e2eead95/v2.0",
               "clientIdSettingName": "AZURE_CLIENT_ID",
               "clientSecretSettingName": "AZURE_CLIENT_SECRET"
             }
