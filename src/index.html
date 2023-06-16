@@ -27,7 +27,7 @@
                     </ul>    
                 </div>                 
                 <div class="nav-item d-flex justify-content-end">
-                        <button class="btn btn-outline-success float-end" type="submit">Login</button>  
+                        <button class="btn btn-outline-success float-end" type="submit" onclick="login()">Login</button>  
                 </div>
             </div>               
         </nav>
@@ -38,6 +38,18 @@
             function profile(){
                 document.getElementById("content").innerHTML = "expense called";
             }
+
+            function callback(){
+                console.log("call back called");
+            }
+
+            //Authentication - login 
+
+            function login(){
+                fetch("/.auth/login/aad").
+                then( console.log("done"));
+            }
+
 
          // Adding Route to the Browser history
 

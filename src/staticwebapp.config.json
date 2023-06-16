@@ -1,5 +1,17 @@
 {
     "navigationFallback": {
       "rewrite": "/index.html",     
-    }
+    },
+
+    "auth": {
+        "identityProviders": {
+          "azureActiveDirectory": {
+            "registration": {
+              "openIdIssuer": "AZURE_TENANT_ID",
+              "clientIdSettingName": "AZURE_CLIENT_ID",
+              "clientSecretSettingName": "AZURE_CLIENT_SECRET"
+            }
+          }
+        }
+      }
 }
