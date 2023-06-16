@@ -1,13 +1,12 @@
 {
+    "routes": [
+        {
+          "route": "/profile",
+          "allowedRoles": ["authenticated"]
+        }
+      ],
 
-    "globalHeaders": {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST, GET, HEAD,OPTIONS"
-    },
-
-    "navigationFallback": {
-      "rewrite": "/index.html",     
-    },
+   
     "auth": {
         "identityProviders": {
           "azureActiveDirectory": {
@@ -18,5 +17,14 @@
             }
           }
         }
+      },
+      
+      "globalHeaders": {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "POST, GET, HEAD,OPTIONS"
+    },
+ 
+      "navigationFallback": {
+        "rewrite": "/index.html",     
       }
 }
