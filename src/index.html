@@ -47,7 +47,7 @@
 
             function login(){
                 try{
-                    fetch("/.auth/login/aad").
+                    fetch("/.auth/login/aad",{  credentials: "include"}).
                     then( console.log("done")).
                     catch((e)=>{
                         console.log(e);
