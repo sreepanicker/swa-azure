@@ -47,7 +47,7 @@
 
             function login(){
                 try{
-                    fetch("/.auth/login/aad",{  credentials: "include"}).
+                    fetch("/.auth/login/aad",{  mode: 'cors', credentials: "include"}).
                     then( console.log("done")).
                     catch((e)=>{
                         console.log(e);
