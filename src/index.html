@@ -80,9 +80,13 @@
                     auth: {
                         clientId: "c180a71f-2753-433f-94dc-7ebaa90b1919d",
                         authority: "66957404-26d4-489b-9385-dde6e2eead95",
-                        redirectUri: "https://happy-island-0964d1310.3.azurestaticapps.net/.auth/login/aad/callback", //defaults to application start page
+                        redirectUri: "https://happy-island-0964d1310.3.azurestaticapps.net/callback", //defaults to application start page
                         postLogoutRedirectUri: "your_app_logout_redirect_uri",
                     },
+                    cache: {
+                        cacheLocation: "sessionStorage", // This configures where your cache will be stored
+                        storeAuthStateInCookie: false, // Set this to "true" if you are having issues on IE11 or Edge
+  }
                     };
 
                     const loginRequest = {
