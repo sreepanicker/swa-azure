@@ -27,9 +27,9 @@
                     </ul>    
                 </div>                 
                 <div class="nav-item d-flex justify-content-end">
-                    <form action="/.auth/login/aad">
-                        <button class="btn btn-outline-success float-end" type="submit" >Login</button>  
-                    </form>
+                    <!--form action="/.auth/login/aad"-->
+                        <button class="btn btn-outline-success float-end"  onclick="login()" type="submit" >Login</button>  
+                    <!--/form-->
                     </div>
             </div>               
         </nav>
@@ -101,7 +101,7 @@
                 if (location.match("/profile")){
                     profile();
                 }
-                if (location.match("/callback")){
+                if (location.startsWith("/.auth")){
                     callback();
                 }
                 console.log(location);
