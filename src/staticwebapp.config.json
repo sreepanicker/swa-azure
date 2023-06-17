@@ -11,11 +11,12 @@
       ],
 
    
-    "auth": {
+      "auth": {
         "identityProviders": {
           "azureActiveDirectory": {
+            "userDetailsClaim": "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name",
             "registration": {
-              "openIdIssuer": "https://login.microsoftonline.com/66957404-26d4-489b-9385-dde6e2eead95/v2.0",
+              "openIdIssuer": "https://login.microsoftonline.com/66957404-26d4-489b-9385-dde6e2eead95",
               "clientIdSettingName": "AZURE_CLIENT_ID",
               "clientSecretSettingName": "AZURE_CLIENT_SECRET"
             }
